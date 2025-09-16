@@ -29,11 +29,9 @@ SECRET_KEY =\
 DEBUG = True
 
 ALLOWED_HOSTS = ['localhost', 
-    'https://ryanodell-8000.theiadockernext-0-labs-prod-theiak8s-4-tor01'\
-    '.proxy.cognitiveclass.ai']
+                 'https://ryanodell-8000.theiadockernext-0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai'] # noqa: E501
 CSRF_TRUSTED_ORIGINS = [
-    'https://ryanodell-8000.theiadockernext-0-labs-prod-theiak8s-4-tor01'\
-    '.proxy.cognitiveclass.ai']
+    'https://ryanodell-8000.theiadockernext-0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai'] # noqa: E501
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [],
@@ -98,7 +96,7 @@ DATABASES = {
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME':
-        'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        'django.contrib.auth.password_validation.UserAttributeSimilarityValidator', # noqa: E501
     },
     {
         'NAME':
@@ -143,7 +141,7 @@ MEDIA_URL = '/media/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR,'frontend/static'),
-    os.path.join(BASE_DIR,'frontend/build'),
-    os.path.join(BASE_DIR,'frontend/build/static'),
+    os.path.join(BASE_DIR, 'frontend/static'),
+    os.path.join(BASE_DIR, 'frontend/build'),
+    os.path.join(BASE_DIR, 'frontend/build/static'),
 ]
